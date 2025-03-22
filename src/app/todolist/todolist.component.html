@@ -1,0 +1,12 @@
+<div class="container">
+ <h1 class="title">Todo-list</h1>
+
+ <button class="add-btn" (click)="navigateToNewTask()">Add New Task</button>
+
+ <ul class="task-list">
+  <li *ngFor="let item of tasklist;" class="task-item">
+   {{ item.name }}
+   <button class="delete-btn" (click)="removeTask(item.id)">X</button>
+  </li>
+ </ul>
+</div>
